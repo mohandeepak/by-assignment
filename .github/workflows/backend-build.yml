@@ -34,8 +34,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '20'
+          distribution: 'adopt'
+
       - name: Run Tests
         run: |
           cd api
-          ls -ltr
           mvn test
