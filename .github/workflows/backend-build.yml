@@ -21,6 +21,9 @@ jobs:
           java-version: '20'
           distribution: 'adopt'
 
+      - name: Set working directory
+        run: cd api
+
       - name: Build with Maven
         run: mvn clean install
 
