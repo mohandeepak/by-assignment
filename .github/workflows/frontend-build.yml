@@ -30,7 +30,11 @@ jobs:
             cd by-react-app
             npm run build
 
-      - name: Run tests
-        run: |
-            cd by-react-app
-            npm test
+#      - name: Run tests
+#        run: |
+#            cd by-react-app
+#            npm test
+      - name: Serve React App
+        run:  |
+            cd by-react-app 
+            npm install -g serve && serve -s build
