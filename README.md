@@ -21,13 +21,13 @@ Follow these steps to set up, run, and test the application:
 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/mohandeepak/by-assignment.git
 ```
 
 2. **Navigate to the api Directory**
 
 ```bash
-cd your-repo-name/api
+cd by-assignment/api
 ```
 
 3. **Build the Backend**
@@ -48,7 +48,7 @@ The backend will be accessible at http://localhost:8080.
 1. **Navigate to the by-react-app Directory**
 
 ```bash
-cd your-repo-name/by-react-app
+cd by-assignment/by-react-app
 ```
 
 2. **Install dependencies**
