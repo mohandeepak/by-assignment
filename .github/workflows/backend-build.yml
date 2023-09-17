@@ -1,25 +1,27 @@
-name: Java CI
+name: Backend Build and Test
 
 on:
   push:
     branches:
-      - main
+      - master
+    paths:
+      - 'api/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Set up JDK 20
+      - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: 20
+          java-version: '20'
 
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Test
+      - name: Run Tests
         run: mvn test
