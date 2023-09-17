@@ -27,7 +27,7 @@ jobs:
 
   build:
     needs: common-setup
-
+    runs-on: ubuntu-latest
     steps:
       - name: Build React app
         run: |
@@ -36,7 +36,7 @@ jobs:
 
   test:
     needs: common-setup
-
+    runs-on: ubuntu-latest
     steps:
       - name: Run tests
         run: |
