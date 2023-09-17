@@ -10,7 +10,7 @@ function App() {
   const [gridApi, setGridApi] = useState(null);
   const [gridColumnApi, setGridColumnApi] = useState(null);
   const [error, setError] = useState(null);
-  const [searchText, setSearchText] = useState(''); // State for the search text
+  const [searchText, setSearchText] = useState('');
 
   const columnDefs = [
     { headerName: 'Name', field: 'API', sortable: true, filter: true },
