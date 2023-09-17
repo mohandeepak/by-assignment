@@ -72,14 +72,14 @@ Functionalities currently supported:
 4. **Sorting**: Sorting based on column values.
 5. **Custom Search and Reset**: To search entire set of  records for specific cell value.
 6. **Exception handling** : Implemented on backend layer
-7. **Testing**: Covers important test cases for both backend and front end functionalities
+7. **Testing**: Covers important test cases for both backend and front end functionalities(Controller tests-backend and Component Tests-Frontend)
 8. **GitHub Actions**: Automating build and tests jobs(backend-build.yml, frontend-build.yml)
 
-Additional functionalities that could be incorporated:
+Additional functionalities that could be incorporated in future:
 
-1. **Automate deployments**(dockerizing and AWS)
-2. **Improve test coverage**
+1. **Automate deployments**(dockerizing apps and deploying it to AWS/GCP)
+2. **Improve test coverage : Testing service layer of backend, test agGrid component, Integration Tests, E2E tests, etc**
 3. **Make UI visually appealing**
-4. **Export Data as a csv or any other appropriate format**
+4. **Export Data populated as a csv or any other appropriate format**
 5. **Lazy loading**
 6. **Client-side caching for offline support**
