@@ -8,7 +8,6 @@ import ApiGrid from './ApiGrid';
 function App() {
   const [rowData, setRowData] = useState([]);
   const [gridApi, setGridApi] = useState(null);
-  const [gridColumnApi, setGridColumnApi] = useState(null);
   const [error, setError] = useState(null);
   const [searchText, setSearchText] = useState('');
 
@@ -52,7 +51,6 @@ function App() {
 
   const onGridReady = (params) => {
     setGridApi(params.api);
-    setGridColumnApi(params.columnApi);
   };
 
   const defaultColDef = {
