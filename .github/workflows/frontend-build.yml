@@ -8,7 +8,7 @@ on:
       - 'by-react-app/**'
 
 jobs:
-  build:
+  common-setup:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,16 +22,23 @@ jobs:
 
       - name: Install dependencies
         run: |
-            cd by-react-app
-            npm install
+          cd by-react-app
+          npm install
 
+  build:
+    needs: common-setup
+
+    steps:
       - name: Build React app
         run: |
-            cd by-react-app
-            npm run build
+          cd by-react-app
+          npm run build
 
+  test:
+    needs: common-setup
+
+    steps:
       - name: Run tests
         run: |
-            cd by-react-app
-            npm test
-
+          cd by-react-app
+          npm test
