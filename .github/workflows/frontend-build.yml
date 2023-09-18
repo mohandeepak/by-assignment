@@ -8,7 +8,7 @@ on:
       - 'by-react-app/**'
 
 jobs:
-  build-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,4 +34,26 @@ jobs:
         run: |
             cd by-react-app
             npm test
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          cd by-react-app
+          npm install
+
+      - name: Run tests
+        run: |
+          cd by-react-app
+          npm test
 

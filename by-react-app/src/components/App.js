@@ -67,7 +67,7 @@ function App() {
   if (error) {
     return (
       <div className="App">
-        <h1 style={{ textAlign: 'center', margin: '20px' }}>API results</h1>
+        <h1 style={{ textAlign: 'center', margin: '20px' }}>API Results</h1>
         <p>Error: {error.message}</p>
       </div>
     );
@@ -75,7 +75,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{ textAlign: 'center', margin: '20px' }}> API results </h1>
+      <h1 style={{ textAlign: 'center', margin: '20px' }}> API Results </h1>
       <SearchBar searchText={searchText} setSearchText={setSearchText} filterData={filterData} />
       <ApiGrid rowData={rowData} onGridReady={onGridReady} columnDefs={columnDefs} defaultColDef={defaultColDef} />
     </div>
