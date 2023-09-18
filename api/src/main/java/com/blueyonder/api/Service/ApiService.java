@@ -2,7 +2,6 @@ package com.blueyonder.api.Service;
 
 import com.blueyonder.api.Exception.ExternalApiException;
 import com.blueyonder.api.Response.ApiResponse;
-import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;

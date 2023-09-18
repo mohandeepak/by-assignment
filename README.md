@@ -71,15 +71,16 @@ Functionalities currently supported:
 3. **Filtering** : Implemented using AG-Grid to filter based on column values.
 4. **Sorting**: Sorting based on column values.
 5. **Custom Search and Reset**: To search entire set of  records for specific cell value.
-6. **Exception handling** : Implemented on backend layer
+6. **Exception handling** : Implemented on backend layer.
 7. **Testing**: Covers important test cases for both backend and front end functionalities(Controller tests-backend and Component Tests-Frontend)
-8. **GitHub Actions**: Automating build and tests jobs(backend-build.yml, frontend-build.yml)
+8. **GitHub Actions**: To automate build and tests jobs(backend-build.yml, frontend-build.yml)
 
 Additional functionalities that could be incorporated in future:
 
 1. **Automate deployments**(dockerizing apps and deploying it to AWS/GCP)
-2. **Improve test coverage : Testing service layer of backend, test agGrid component, Integration Tests, E2E tests, etc**
-3. **Make UI visually appealing**
-4. **Export Data populated as a csv or any other appropriate format**
-5. **Lazy loading**
-6. **Client-side caching for offline support**
+2. **Improve test coverage : test service layer of backend, test paging/sorting/filtering functionality, integration Tests , etc**
+3. **Implement test automation using BDD(Behavior Driven Development)**
+4. **Make UI visually appealing**
+5. **Add functionality to export data as a csv or any other appropriate format**
+6. **Implement Lazy loading**
+7. **Implement Client-side caching for offline support**

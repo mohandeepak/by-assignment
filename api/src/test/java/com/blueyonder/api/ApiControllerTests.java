@@ -44,6 +44,7 @@ public class ApiControllerTests {
         mockMvc.perform(MockMvcRequestBuilders.get("/api/entries")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$.count", is(1425)));
     }
 
@@ -55,5 +56,4 @@ public class ApiControllerTests {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
-
 }
