@@ -33,7 +33,6 @@ cd by-assignment/api
 3. **Build the Backend**
 
 ```bash
-
 mvn clean install
 ```
 
@@ -42,6 +41,11 @@ Simply run the class ApiApplication.java
 
 The backend will be accessible at http://localhost:8080.
 
+5. **Run Tests**
+
+```bash
+mvn test
+```
 
 ### Setting up frontend application
 
@@ -63,6 +67,11 @@ npm start
 The React app will open in your web browser at http://localhost:3000, fetching and displaying data from the Spring Boot backend.
 
 ![User Interface](by-react-app/public/UI.png)
+
+4. **Run Tests**
+```bash
+npm test
+```
 
 Functionalities currently supported:
 
